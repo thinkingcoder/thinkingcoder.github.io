@@ -1,228 +1,394 @@
-<!--A Design by W3layouts
-Author: W3layout
+<!--
+Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-<title>Travaux a Personal Category Flat Bootstarp responsive Website Template| Home :: w3layouts</title>
+<title>Animus A Blogging Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Travaux Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+<meta name="keywords" content="Graphic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<script src="js/jquery-1.11.0.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-<!---- start-smoth-scrolling---->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-<!--start-smoth-scrolling-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script src="js/jquery.min.js"></script>
+<script>
+		$(document).ready(function () {
+		    size_li = $("#myList li").size();
+		    x=3;
+		    $('#myList li:lt('+x+')').show();
+		    $('#loadMore').click(function () {
+		        x= (x+1 <= size_li) ? x+1 : size_li;
+		        $('#myList li:lt('+x+')').show();
+		    });
+		    $('#showLess').click(function () {
+		        x=(x-1<0) ? 1 : x-1;
+		        $('#myList li').not(':lt('+x+')').hide();
+		    });
+		});
+	</script>
+
 </head>
 <body>
-<!--start-banner-->
-	<div class="banner" id="home">
-		<div class="container">
-			<div class="banner-top">
-				<a href="index.html"><img src="images/logo.png" alt="" /></a>
-				<h1>WORKING <span> WITH DESIGN LAB</span></h1>
-				<p>We’ve been helping startups launch and grow their businesses. We help you to fill the gap between development, design and product management.</p>
-				<div class="dwn">
-					<a href="#about" class="scroll"><img src="images/dwn-arw.png" alt="" /></a>
+<!-- header -->
+<div class="banner">
+	<div class="container">
+		<div class="header">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+			</div>
+			<div class="header-right">
+				<ul>
+					<li><a href="#"><i class="fb"> </i></a></li>
+					<li><a href="#"><i class="twt"> </i></a></li>
+				<li>
+				<div class="search2">
+					<form>
+						<input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}">
+						<input type="submit" value="">
+					</form>
+				</div></li>
+					<div class="clearfix"></div>
+				</ul>
+					
+			</div>
+				<div class="clearfix"> </div>
+			</div>
+				<div class="head-nav">
+					<span class="menu"> </span>
+						<ul class="cl-effect-15">
+						<li class="active"><a href="index.html">HOME</a></li>
+							<li><a href="about.html" data-hover="ABOUT">ABOUT</a></li>
+							<li><a href="photos.html" data-hover="PHOTOS">PHOTOS</a></li>
+							<li><a href="404.html" data-hover="ARCHIVES">ARCHIVES</a></li>
+							<li><a href="contact.html" data-hover="CONTACT">CONTACT</a></li>
+								<div class="clearfix"> </div>
+						</ul>
 				</div>
-			</div>
-		</div>	
-	</div>	
-	<!--end-banner-->
-	<!--start-about-->
-	<div class="about" id="about">
-		<div class="container">
-			<div class="about-main">
-				<h3>ABOUT US</h3>
-				<p> When you work with us, you are part of a team of committed collaborators.<span> All aspects of our software development process are integrated, iterative and agile.</span></p>
-  				<p>Our approach unifies design, development and product management to create exceptional products. We start each project by understanding your business goals, the user’s needs and the product requirements. Then we help translate them into effective and elegant solutions.</p>
-			</div>
-		</div>
-	</div>
-	<!--end-about-->
-	<!--start-services-->
-	<div class="services">
-		<div class="container">
-			<div class="services-mian">
-				<h3>SERVICES</h3>
-				<p>Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision. </p>
-				<p>The outcome of this scoping session is a proposal or high-level statement of work. Based on your requirements, we can provide a complete offering or just the pieces you need. </p>
-			</div>
-		</div>
-	</div>
-	<!--end-services-->		
-	<!--start-what-->
-	<div class="what">
-		<div class="container">
-			<div class="what-mian">
-				<h3>WHAT WE DO</h3>
-				<div class="what-top">
-					<div class="what-one">
-						<span class="one"> </span>
-						<h4>DESIGN</h4>
-						<P>Our design practice offers a full range of services including branding strategy, interaction and visual design and user experience testing.</P> 
-						<P>Throughout your project, our designers create and implement visual designs and workflows, solicit user feedback, and work with you to make sure what gets built is what is needed. </P>
-					</div>
-					<div class="what-one">
-						<span class="two"> </span>
-						<h4>DEVELOPMENT</h4>
-						<P>All engineers are fluent in the latest enterprise, mobile and web development technologies. </P>
-						<P>They collaborate with your team to write, test, and improve code on a daily basis, using proven practices such as test-driven development and pair programing.</P> 
-					</div>
-					<div class="what-one">
-						<span class="tre"> </span>
-						<h4>PRODUCT MANAGEMENT</h4>
-						<P>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve. </P> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--end-what-->
-	<!--start-work-->
-	<div class="work">
-		<div  id="top" class="callbacks_container">
-			      	<ul class="rslides" id="slider4">
+
+						<!-- script-for-nav -->
+					<script>
+						$( "span.menu" ).click(function() {
+						  $( ".head-nav ul" ).slideToggle(300, function() {
+							// Animation complete.
+						  });
+						});
+					</script>
+				<!-- script-for-nav --> 					 
+	</div> 
+</div>
+<!-- header -->
+
+<!-- content -->
+<div class="content">
+	<div class="container">
+	 <div class="load_more">	
+			     <ul id="myList">
+			        <!-- These are our grid blocks -->
 			        <li>
-						<div class="work-main">
-							<div class="col-md-4 work-one">
-								<img src="images/work-1.jpg" alt="" />
-								<h3>TOPWORKZ</h3>
+						<div class="l_g">
+							<div class="col-md-3 praesent">
+								<div class="l_g_r">
+									<div class="dapibus">
+										<h2>Praesent dapibusneque id cursus faucioibus tortor neque tiegetas augue</h2>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/img1.jpg" class="img-responsive" alt=""></a>
+										<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate. </p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-4 work-one">
-								<img src="images/work-2.jpg" alt="" />
-								<h3>JOINT</h3>
+							<div class="col-md-3 integ">
+								<div class="l_g_r">
+									<div class="integer">
+										<h3>Integer vitae libero ac risus egestas</h3>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/img3.jpg" class="img-responsive" alt=""></a>
+										<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel ipsum dolor.</p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-4 work-one">
-								<img src="images/work-3.jpg" alt="" />
-								<h3>MARKET</h3>
+							<div class="col-md-3 integ">
+								<div class="l_g_r">
+									<div class="dapibus">
+										<h3>Integer vitae libero risus egestas</h3>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/2222.jpg" class="img-responsive" alt=""></a>
+										<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilis</p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+								</div>
 							</div>
-							<div class="clearfix"></div>	
-						</div>
-						<div class="work-main">
-							<div class="col-md-4 work-one">
-								<img src="images/work-4.jpg" alt="" />
-								<h3>WORKTOP</h3>
+							<div class="col-md-3 integ">
+								<div class="l_g_r">
+									<div class="posts">
+										<h4>Recent posts</h4>
+										<h6><a href="#">Aliquam tincidunt mauris</a></h6>
+										<h6><a href="#">Vestibulum auctor lipsum</a></h6>
+										<h6><a href="#">Nunc dignissim risus</a></h6>
+										<h6><a href="#">Cras ornare tristiqu</a></h6>
+									</div>
+									<div class="comments">
+										<h4>Recent Comments</h4>
+										<h6><a href="#">Amada Doe <span>on</span> Hello World!</a></h6>
+										<h6><a href="#">Peter Doe <span>on</span> Photography</a></h6>
+										<h6><a href="#">Steve Roberts <span>on</span> HTML5/CSS3</a></h6>
+										<h6><a href="#">Doe Peter<span>on</span> Photography</a></h6>
+									</div>
+									<div class="archievs">
+										<h4>Archives</h4>
+										<h6><a href="#">October 2013</a></h6>
+										<h6><a href="#">September 2013</a></h6>
+										<h6><a href="#">August 2013</a></h6>
+										<h6><a href="#">July 2013</a></h6>
+									</div>
+
+								</div>
 							</div>
-							<div class="col-md-4 work-one">
-								<img src="images/work-5.jpg" alt="" />
-								<h3>LABLE</h3>
-							</div>
-							<div class="col-md-4 work-one">
-								<img src="images/work-6.jpg" alt="" />
-								<h3>KYIV</h3>
-							</div>
-							<div class="clearfix"></div>	
+							<div class="clearfix"></div>
 						</div>
 					</li>
 					 <li>
-						<div class="work-main">
-							<div class="col-md-4 work-one">
-								<img src="images/work-4.jpg" alt="" />
-								<h3>WORKTOP</h3>
+						<div class="l_g">
+							<div class="col-md-3 praesent">
+								<div class="l_g_r">
+									<div class="dapibus">
+										<h3>CURSUS FAUCIO</h3>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/img2.jpg" class="img-responsive" alt=""></a>
+										<p>Phasellus ultrices nulla. </p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-4 work-one">
-								<img src="images/work-6.jpg" alt="" />
-								<h3>KYIV</h3>
+							<div class="col-md-3 integ">
+								<div class="l_g_r">
+									<div class="integer">
+										<h3>Aliquam tincidunt mauris eu risus</h3>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-4 work-one">
-								<img src="images/work-1.jpg" alt="" />
-								<h3>TOPWORKZ</h3>
+							<div class="col-md-3 integ">
+								<div class="l_g_r">
+									<div class="lorem">
+										<h3>Lorem ipsum dolor</h3>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<iframe src="//player.vimeo.com/video/78517603" width="220px" height="" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+										<p>Pellentesque odio nisi, euismod in, pharetra a, ultricies in.</p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+								</div>
 							</div>
-							<div class="clearfix"></div>	
-						</div>
-						<div class="work-main">
-							<div class="col-md-4 work-one">
-								<img src="images/work-2.jpg" alt="" />
-								<h3>JOINT</h3>
+							<div class="col-md-3 integ">
+								<div class="l_g_r">
+									<div class="categories">
+										<h4>Categories</h4>
+										<h6><a href="#">Vivamus vestibulum nulla</a></h6>
+										<h6><a href="#">Integer vitae libero ac risus e</a></h6>
+										<h6><a href="#">Vestibulum commo</a></h6>
+										<h6><a href="#">Cras iaculis ultricies</a></h6>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-4 work-one">
-								<img src="images/work-3.jpg" alt="" />
-								<h3>MARKET</h3>
-							</div>
-							<div class="col-md-4 work-one">
-								<img src="images/work-5.jpg" alt="" />
-								<h3>LABLE</h3>
-							</div>
-							<div class="clearfix"></div>	
+							<div class="clearfix"></div>
 						</div>
 					</li>
-			     </ul>
-			  </div>
-		<div class="clearfix"> </div>		
+			        <!----//--->
+					 <li>
+						<div class="l_g">
+							<div class="col-md-3 praesent">
+								<div class="l_g_r">
+									<div class="dapibus">
+										<h2>Praesent dapibusneque id cursus faucioibus tortor neque tiegetas augue</h2>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/img10.jpg" class="img-responsive" alt=""></a>
+										<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate. </p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 integ">
+								<div class="l_g_r">
+									<div class="vitae">
+										<h3>Integer vitae libero risus egestas</h3>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/img4.jpg" class="img-responsive" alt=""></a>
+										<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet</p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-md-3 praesent">
+								<div class="l_g_r">
+									<div class="integer">
+										<h3>Praesent dapibusn id cursus</h3>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/img11.jpg" class="img-responsive" alt=""></a>
+										<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate. </p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 integ">
+								<div class="l_g_r">
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+			        <!----//--->
+			          <li>
+						<div class="l_g">
+							<div class="col-md-3 praesent">
+								<div class="l_g_r">
+									<div class="dapibus">
+										<h2>Praesent dapibusneque id cursus faucioibus tortor neque tiegetas augue</h2>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/img13.jpg" class="img-responsive" alt=""></a>
+										<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate. </p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 integ">
+								<div class="l_g_r">
+									<div class="vitae">
+										<h3>Integer vitae libero risus egestas</h3>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/img14.jpg" class="img-responsive" alt=""></a>
+										<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet</p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-md-3 praesent">
+								<div class="l_g_r">
+									<div class="integer">
+										<h3>Praesent dapibusn id cursus</h3>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/img15.jpg" class="img-responsive" alt=""></a>
+										<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate. </p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 integ">
+								<div class="l_g_r">
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					 <li>
+						<div class="l_g">
+							<div class="col-md-3 praesent">
+								<div class="l_g_r">
+									<div class="dapibus">
+										<h2>Praesent dapibusneque id cursus faucioibus tortor neque tiegetas augue</h2>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/img16.jpg" class="img-responsive" alt=""></a>
+										<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate. </p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 integ">
+								<div class="l_g_r">
+									<div class="vitae">
+										<h3>Integer vitae libero risus egestas</h3>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/img17.jpg" class="img-responsive" alt=""></a>
+										<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet</p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-md-3 praesent">
+								<div class="l_g_r">
+									<div class="integer">
+										<h3>Praesent dapibusn id cursus</h3>
+										<p class="adm">Posted by <a href="#">Admin</a>  |  7 days ago</p>
+										<a href="details.html"><img src="images/img5.jpg" class="img-responsive" alt=""></a>
+										<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate. </p>
+										<a href="details.html" class="link">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 integ">
+								<div class="l_g_r">
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					<div class="clearfix"></div>
+					 <!----//--->
+			      </ul>
+				  <div id="loadMore">Load more</div>
+	<div id="showLess">Show less</div>
+
+			    </div>
 	</div>
-	<!--end-work-->
-	<!--Slider-Starts-Here-->
-				<script src="js/responsiveslides.min.js"></script>
-			 <script>
-			    // You can also use "$(window).load(function() {"
-			    $(function () {
-			      // Slideshow 4
-			      $("#slider4").responsiveSlides({
-			        auto: true,
-			        pager: true,
-			        nav: false,
-			        speed: 500,
-			        namespace: "callbacks",
-			        before: function () {
-			          $('.events').append("<li>before event fired.</li>");
-			        },
-			        after: function () {
-			          $('.events').append("<li>after event fired.</li>");
-			        }
-			      });
-			
-			    });
-			  </script>
-	<!--End-slider-script-->	
-	<!--start-contact-->
-	<div class="contact">
+</div>
+<!-- content -->	
+<!-- footer -->
+	<div class="footer">
 		<div class="container">
-			<div class="contact-main">
-				<h3>CONTACT US</h3>
-				<p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve. </p>
-				<div class="contact-btn">
-					<a href="contact.html" class="hvr-sweep-to-right">CONTACT US</a>
+			<div class="col-md-3 copy">
+				<div class="top1">
+					<i class="ham"></i>
 				</div>
+				<div class="top2">
+					<h6>Copyrights © 2015 Graphic</h6>
+					<p>All rights reserved</p>
+				</div>
+				<div class="clearfix"> </div>
 			</div>
-			<div class="contact-bottom">
-				<a href="index.html"><img src="images/logo-1.png" alt="" /></a>
-				<p>Template By <a href="http://w3layouts.com/"> W3layouts</a></p>
+			<div class="col-md-3 copy">
+				<div class="top1">
+					<i class="men"></i>
+				</div>
+				<div class="top2">
+					<h6>Template by: </h6>
+					<p><a href="http://w3layouts.com/">W3layouts</a></p>
+				</div>
+				<div class="clearfix"> </div>
 			</div>
+			<div class="col-md-3 copy">
+				<div class="top1">
+					<i class="app"></i>
+				</div>
+				<div class="top2">
+					<h6>Images From: </h6>
+					<p><a href="#"> www.wallcoo.net</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-3 copy">
+				<div class="top1">
+					<i class="lik"></i>
+				</div>
+				<div class="top2">
+					<h6>Website </h6>
+					<p><a href="#"> www.yourblog.com</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
 		</div>
-		<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear' 
-								 		};
-										*/
-										
-										$().UItoTop({ easingType: 'easeOutQuart' });
-										
-									});
-								</script>
-		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	</div>
-	<!--end-contact-->	
+<!-- footer -->
 </body>
 </html>
